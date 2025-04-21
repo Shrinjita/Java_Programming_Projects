@@ -1,0 +1,55 @@
+Converging Maze: Nearest Meeting Cell
+Problem Description
+You are given a maze with N cells. Each cell may have multiple entry points, but at most one exit (i.e., entry/exit points are unidirectional, like valves).
+The cells are numbered from 0 to N-1.
+
+Your task is to:
+
+Find the nearest meeting cell (NMC) for two given cells.
+
+Given two cells C1 and C2, determine the closest cell Cm that can be reached from both C1 and C2.
+If no such cell exists, return -1.
+
+Function Description
+Implement the following function:
+
+python
+Copy code
+def Solution(arr: List[int], src1: int, src2: int) -> int:
+    # Your code here
+arr[N]: The edge array, where arr[i] is the cell that can be reached from cell i in one step.
+
+src1, src2: The two source cells.
+
+Return the nearest meeting cell reachable from both src1 and src2.
+
+Input Format
+An integer T, denoting the number of test cases.
+
+For each test case:
+
+Line 1: An integer N, the number of cells.
+
+Line 2: N space-separated integers, representing the edge[] array:
+
+edge[i] is the destination cell from cell i.
+
+edge[i] = -1 means cell i has no exit.
+
+Line 3: Two integers, the source cells C1 and C2.
+
+Output Format
+For each test case, print a single line with the nearest meeting cell (NMC).
+
+If no common reachable cell exists, print -1.
+
+Sample Input
+Copy code
+1  
+6  
+1 2 -1 -1 5 -1  
+0 4
+Sample Output
+diff
+Copy code
+-1

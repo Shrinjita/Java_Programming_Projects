@@ -1,0 +1,29 @@
+Converging Maze: Largest Sum Cycle
+
+You are given a maze with N cells. Each cell may have multiple entry points, but at most one exit (i.e., entry/exit points are unidirectional, like valves).
+The cells are numbered from 0 to N-1.
+
+You need to find the sum of the largest sum cycle in the maze.
+Return -1 if there are no cycles.
+
+The sum of a cycle is the sum of the indices of all the nodes involved in that cycle.
+
+Input Format:
+The first line contains an integer N, the number of cells.
+
+The second line contains N integers, where edge[i] indicates the cell that can be reached from cell i in one step.
+
+If edge[i] = -1, it means cell i has no exit.
+
+Output Format:
+Print a single integer: the sum of the largest sum cycle.
+
+Print -1 if there are no cycles.
+
+Sample Input:
+Copy code
+23  
+14 9 15 11 -1 10 15 22 22 22 22 22 21 4 4 14 13 8 8 8 0 8 0
+Sample Output:
+Copy code
+45
